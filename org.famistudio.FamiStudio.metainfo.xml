@@ -36,7 +36,7 @@
             <li>FamiTracker tempo improvements (delayed notes, cuts, fixes).</li>
             <li>Added support for Cxx (Halt) FamiTracker effect.</li>
             <li>Option to export each channel to a seperate WAV/MP3 file. </li>
-            <li>Small DPCM improvements (Drag & drop, bit reverse option)</li>
+            <li>Small DPCM improvements (Drag drop, bit reverse option)</li>
             <li>Small tempo improvements</li>
             <li>Sound engine code size reduction</li>
           </ol>
