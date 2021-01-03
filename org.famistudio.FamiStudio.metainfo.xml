@@ -21,7 +21,28 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
-     <release version="2.2.1" date="2020-10-03">
+      <release version="2.3.0" date="2021-01-03">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.0</url>
+        <description>
+          <ol>
+            <li>MP3 export</li>
+            <li>Video export</li>
+            <li>Song merge functionality</li>
+            <li>Duty cycle effect track support (equivalent of Vxx in FamiTracker) </li>
+            <li>Special paste improvements (repeat, effects, etc.)</li>
+            <li>Special delete</li>
+            <li>Copy patterns to different channels in sequencer</li>
+            <li>Option to display note labels in piano roll</li>
+            <li>FamiTracker tempo improvements (delayed notes, cuts, fixes).</li>
+            <li>Added support for Cxx (Halt) FamiTracker effect.</li>
+            <li>Option to export each channel to a seperate WAV/MP3 file. </li>
+            <li>Small DPCM improvements (Drag & drop, bit reverse option)</li>
+            <li>Small tempo improvements</li>
+            <li>Sound engine code size reduction</li>
+          </ol>
+        </description>
+      </release>  
+      <release version="2.2.1" date="2020-10-03">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.2.1</url>
         <description>
           <ol>
