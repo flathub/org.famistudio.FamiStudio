@@ -21,6 +21,37 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
+      <release version="2.4.1" date="2021-03-17">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.4.1</url>
+        <description>
+          <p>Fixes in 2.4.1 (Hotfix)</p>
+          <ol>
+		<li>Fixed corruption when importing looping samples from .FTI files.</li>
+		<li>Fixed minor graphical issue in piano roll.</li>
+		<li>Fixed issues on Windows 7 installations that are missing some D3D11 components such as KB2670838.</li>
+		<li>Removed 320 kbps MP3 export option since it creates choppy audio.</li>
+          </ol>        
+          <p>Changes/Fixes in 2.4.0:</p>
+          <ol>
+            <li>Basic DPCM sample editor</li>
+            <li>Darker theme and more color choices</li>
+            <li>Ability to use QWERTY keyboard input without using recording mode</li>
+            <li>Slightly reduced audio latency and configurable number of buffered frames</li>
+            <li>Right-clicking anywhere in the background also starts a selection</li>
+            <li>Seek bar can be dragged and respects snapping precision</li>
+            <li>Pattern duplication preserves names when possible</li>
+            <li>Instrument picker tool (hold "I" + click on a note)</li>
+            <li>Paste special in Sequencer</li>
+            <li>Pattern are created automatically when adding notes.</li>
+            <li>Quickly repeat last export by right clicking button or CTRL+SHIFT+E</li>
+            <li>Edit multiple custom patterns at once</li>
+            <li>Video export resolution/framerate options (Contributed by Thomas McGrew)</li>
+            <li>Multiple VRC7 fixes</li>
+            <li>Multiple FamiTracker fixes</li>
+            <li>Multiple sound engine improvements and fixes</li>
+          </ol>
+        </description>
+      </release>     
       <release version="2.4.0" date="2021-03-08">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.4.0</url>
         <description>
