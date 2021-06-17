@@ -21,6 +21,43 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
+        <release version="3.0.1" date="2021-06-17">
+          <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.1</url>
+          <description>
+            <p>Fixes in 3.0.1</p>
+            <ul>
+		<li>Fixed crash on startup on Linux when RtMidi fails to initialize</li>
+		<li>Fixed fine effect adjustment (SHIFT + drag) when multiple values are selected</li>
+		<li>Fixed race condition when stopping song playback that could cause a crash</li>
+		<li>Fixed small OpenGL leaks</li>
+		<li>Fixed pattern duplication when CTRL+SHIFT were already pressed when starting the drag</li>
+		<li>Fixed import of MIDI files containing polyphonic key pressure events</li>
+		<li>Fixed duplicated labels when exporting projects containing multiple songs to Famitone2 or FamiStudio sound engine</li>
+		<li>Fixed crash when double clicking or left clicking in some cells of grids</li>
+		<li>Fixed export of VRC6 duty cycles to FamiTracker</li>
+		<li>Properly shutting down MIDI input on Windows</li>
+		<li>Adding error message when trying to import NSF using multiple expansion chips</li>
+            </ul>          
+            <p>Changes/Fixes in 3.0.0:</p>
+            <ol>
+		<li>Redesigned FamiStudio tempo</li>
+		<li>Redesigned note editing</li>
+		<li>MIDI import/export support</li>
+		<li>Oscilloscope in toolbar</li>
+		<li>Optional scrollbars</li>
+		<li>Revamped Mac version</li>
+		<li>1/2 and 1/4 playback speed</li>
+		<li>Configurable QWERTY keyboard keys</li>
+		<li>Improved sound engine music data compression (15-30% smaller)</li>
+		<li>Audio expansion volume/low-pass filter configuration</li>
+		<li>S5B and VRC7 and now properly low-pass filtered</li>
+		<li>Ability to re-order songs</li>
+		<li>Hi-DPI support on Linux</li>
+		<li>Quick DPCM source data reload</li>
+		<li>Improved video rendering speed</li>
+            </ol>
+          </description>
+	</release>     
         <release version="3.0.0" date="2021-06-01">
           <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.0</url>
           <description>
