@@ -21,6 +21,43 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
+        <release version="3.0.2" date="2021-06-28">
+          <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.2</url>
+          <description>
+            <p>Fixes in 3.0.2</p>
+            <ul>
+		<li>Fixed crash when pasting past the end of an envelope</li>
+		<li>Fixed FamiTracker (FTM/TXT) import when a jump or skip effect is exactly at row 255</li>
+		<li>Fixed FamiStudio currupting the keyboard state on some european keyboards</li>
+		<li>Fixed oscilloscope vertical orientation in toolbar + video export</li>
+		<li>Fixed crash when using 150% scaling on Linux</li>
+		<li>Fixed crash when parsing FamiStudio text file using VRC6 expansion.</li>
+		<li>Fixed fine effect adjustment (shift + drag) again</li>
+		<li>Stopping all audio when undo/redo happens to change the selected song</li>
+		<li>Showing all 8 channels when importing MIDI using N163 expansion</li>
+		<li>Added error message when trying to import a corrupted WAV file</li>
+		<li>Made auto-scrolling when selecting more gradual in both sequencer and piano roll.</li>
+            </ul>
+            <p>Changes/Fixes in 3.0.0:</p>
+            <ul>
+		<li>Redesigned FamiStudio tempo</li>
+		<li>Redesigned note editing</li>
+		<li>MIDI import/export support</li>
+		<li>Oscilloscope in toolbar</li>
+		<li>Optional scrollbars</li>
+		<li>Revamped Mac version</li>
+		<li>1/2 and 1/4 playback speed</li>
+		<li>Configurable QWERTY keyboard keys</li>
+		<li>Improved sound engine music data compression (15-30% smaller)</li>
+		<li>Audio expansion volume/low-pass filter configuration</li>
+		<li>S5B and VRC7 and now properly low-pass filtered</li>
+		<li>Ability to re-order songs</li>
+		<li>Hi-DPI support on Linux</li>
+		<li>Quick DPCM source data reload</li>
+		<li>Improved video rendering speed</li>
+            </ul>
+          </description>
+	</release>       
         <release version="3.0.1" date="2021-06-17">
           <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.1</url>
           <description>
