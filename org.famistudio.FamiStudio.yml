@@ -15,6 +15,13 @@ finish-args:
   - --env=MONO_GAC_PREFIX=${FLATPAK_DEST}
 # Midi keyboard input
   - --device=all
+add-extensions:
+  - org.freedesktop.Platform.ffmpeg-full:
+    - directory: lib/ffmpeg
+    - version: 20.08
+    - add-ld-path: "."
+    - autodelete: true
+    - no-autodownload: false  
 modules:
   - shared-modules/gtk2/gtk2.json
 
@@ -48,8 +55,8 @@ modules:
       - ln -sf /usr/lib/x86_64-linux-gnu/libopenal.so.1 /app/bin/libopenal32.so
     sources:
       - type: archive
-        url: https://github.com/BleuBleu/FamiStudio/releases/download/3.0.2/FamiStudio302-LinuxAMD64.zip
-        sha256: 750c0a528846bab51272810df314d902e5905bc6d71f37b077caab3c704c7d45
+        url: https://github.com/BleuBleu/FamiStudio/releases/download/3.1.0/FamiStudio310-LinuxAMD64.zip
+        sha256: 1e523849198fd6f73d60b9e6eb609b27a188809150800fe342bbc3c43e02dce0
         strip-components: 0
 
   - name: extrafiles

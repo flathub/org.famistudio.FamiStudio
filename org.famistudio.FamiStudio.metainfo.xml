@@ -21,276 +21,301 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
-        <release version="3.0.2" date="2021-06-28">
-          <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.2</url>
-          <description>
-            <p>Fixes in 3.0.2</p>
-            <ul>
-		<li>Fixed crash when pasting past the end of an envelope</li>
-		<li>Fixed FamiTracker (FTM/TXT) import when a jump or skip effect is exactly at row 255</li>
-		<li>Fixed FamiStudio currupting the keyboard state on some european keyboards</li>
-		<li>Fixed oscilloscope vertical orientation in toolbar + video export</li>
-		<li>Fixed crash when using 150% scaling on Linux</li>
-		<li>Fixed crash when parsing FamiStudio text file using VRC6 expansion.</li>
-		<li>Fixed fine effect adjustment (shift + drag) again</li>
-		<li>Stopping all audio when undo/redo happens to change the selected song</li>
-		<li>Showing all 8 channels when importing MIDI using N163 expansion</li>
-		<li>Added error message when trying to import a corrupted WAV file</li>
-		<li>Made auto-scrolling when selecting more gradual in both sequencer and piano roll.</li>
-            </ul>
-            <p>Changes/Fixes in 3.0.0:</p>
-            <ul>
-		<li>Redesigned FamiStudio tempo</li>
-		<li>Redesigned note editing</li>
-		<li>MIDI import/export support</li>
-		<li>Oscilloscope in toolbar</li>
-		<li>Optional scrollbars</li>
-		<li>Revamped Mac version</li>
-		<li>1/2 and 1/4 playback speed</li>
-		<li>Configurable QWERTY keyboard keys</li>
-		<li>Improved sound engine music data compression (15-30% smaller)</li>
-		<li>Audio expansion volume/low-pass filter configuration</li>
-		<li>S5B and VRC7 and now properly low-pass filtered</li>
-		<li>Ability to re-order songs</li>
-		<li>Hi-DPI support on Linux</li>
-		<li>Quick DPCM source data reload</li>
-		<li>Improved video rendering speed</li>
-            </ul>
-          </description>
-	</release>       
-        <release version="3.0.1" date="2021-06-17">
-          <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.1</url>
-          <description>
-            <p>Fixes in 3.0.1</p>
-            <ul>
-		<li>Fixed crash on startup on Linux when RtMidi fails to initialize</li>
-		<li>Fixed fine effect adjustment (SHIFT + drag) when multiple values are selected</li>
-		<li>Fixed race condition when stopping song playback that could cause a crash</li>
-		<li>Fixed small OpenGL leaks</li>
-		<li>Fixed pattern duplication when CTRL+SHIFT were already pressed when starting the drag</li>
-		<li>Fixed import of MIDI files containing polyphonic key pressure events</li>
-		<li>Fixed duplicated labels when exporting projects containing multiple songs to Famitone2 or FamiStudio sound engine</li>
-		<li>Fixed crash when double clicking or left clicking in some cells of grids</li>
-		<li>Fixed export of VRC6 duty cycles to FamiTracker</li>
-		<li>Properly shutting down MIDI input on Windows</li>
-		<li>Adding error message when trying to import NSF using multiple expansion chips</li>
-            </ul>          
-            <p>Changes/Fixes in 3.0.0:</p>
-            <ol>
-		<li>Redesigned FamiStudio tempo</li>
-		<li>Redesigned note editing</li>
-		<li>MIDI import/export support</li>
-		<li>Oscilloscope in toolbar</li>
-		<li>Optional scrollbars</li>
-		<li>Revamped Mac version</li>
-		<li>1/2 and 1/4 playback speed</li>
-		<li>Configurable QWERTY keyboard keys</li>
-		<li>Improved sound engine music data compression (15-30% smaller)</li>
-		<li>Audio expansion volume/low-pass filter configuration</li>
-		<li>S5B and VRC7 and now properly low-pass filtered</li>
-		<li>Ability to re-order songs</li>
-		<li>Hi-DPI support on Linux</li>
-		<li>Quick DPCM source data reload</li>
-		<li>Improved video rendering speed</li>
-            </ol>
-          </description>
-	</release>     
-        <release version="3.0.0" date="2021-06-01">
-          <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.0</url>
-          <description>
-            <p>Changes/Fixes in 3.0.0:</p>
-            <ol>
-		<li>Redesigned FamiStudio tempo</li>
-		<li>Redesigned note editing</li>
-		<li>MIDI import/export support</li>
-		<li>Oscilloscope in toolbar</li>
-		<li>Optional scrollbars</li>
-		<li>Revamped Mac version</li>
-		<li>1/2 and 1/4 playback speed</li>
-		<li>Configurable QWERTY keyboard keys</li>
-		<li>Improved sound engine music data compression (15-30% smaller)</li>
-		<li>Audio expansion volume/low-pass filter configuration</li>
-		<li>S5B and VRC7 and now properly low-pass filtered</li>
-		<li>Ability to re-order songs</li>
-		<li>Hi-DPI support on Linux</li>
-		<li>Quick DPCM source data reload</li>
-		<li>Improved video rendering speed</li>
-            </ol>
-          </description>
-      </release>   
-      <release version="2.4.2" date="2021-05-03">
-        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.4.2</url>
+      <release version="3.1.0" date="2021-08-05">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.1.0</url>
         <description>
-          <p>Fixes in 2.4.2 (Hotfix)</p>
+          <p>Changes in 3.1.0:</p>
           <ol>
-		<li>Fixed crash on startup.</li>
-		<li>Fixed crash when exporting SFX to sound engine from command-line.</li>
-          </ol>          
-          <p>Fixes in 2.4.1 (Hotfix)</p>
+            <li>OGG export</li>
+            <li>Oscilloscope video export</li>
+            <li>Stereo WAV/MP3/OGG/Video export</li>
+            <li>Metronome</li>
+            <li>Noise slides</li>
+            <li>Volume slides</li>
+            <li>Noise emulation improvements</li>
+            <li>Portable mode (save settings in root folder if portable.txt is detected)</li>
+            <li>Import samples from other projects</li>
+            <li>Loop in selection mode</li>
+            <li>ROM export now uses MMC3 mapper</li>
+            <li>Fine tuning + DMC initial value parameters on DPCM samples</li>
+            <li>Option to auto-save copy every 2 minutes</li>
+            <li>Option for thicker scroll bars</li>
+            <li>Minor sequencer selection improvements</li>
+            <li>MacOS Monterey Beta support, Beta 3 or newer needed (Thanks OpenTK team!)</li>
+            <li>Sound Engine CC65 bindings (Contribution from jroweboy!)</li>
+          </ol>
+        </description>
+      </release>        
+      <release version="3.0.2" date="2021-06-28">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.2</url>
+        <description>
+          <p>Fixes in 3.0.2</p>
+          <ul>
+            <li>Fixed crash when pasting past the end of an envelope</li>
+            <li>Fixed FamiTracker (FTM/TXT) import when a jump or skip effect is exactly at row 255</li>
+            <li>Fixed FamiStudio currupting the keyboard state on some european keyboards</li>
+            <li>Fixed oscilloscope vertical orientation in toolbar + video export</li>
+            <li>Fixed crash when using 150% scaling on Linux</li>
+            <li>Fixed crash when parsing FamiStudio text file using VRC6 expansion.</li>
+            <li>Fixed fine effect adjustment (shift + drag) again</li>
+            <li>Stopping all audio when undo/redo happens to change the selected song</li>
+            <li>Showing all 8 channels when importing MIDI using N163 expansion</li>
+            <li>Added error message when trying to import a corrupted WAV file</li>
+            <li>Made auto-scrolling when selecting more gradual in both sequencer and piano roll.</li>
+          </ul>
+          <p>Changes/Fixes in 3.0.0:</p>
+          <ul>
+            <li>Redesigned FamiStudio tempo</li>
+            <li>Redesigned note editing</li>
+            <li>MIDI import/export support</li>
+            <li>Oscilloscope in toolbar</li>
+            <li>Optional scrollbars</li>
+            <li>Revamped Mac version</li>
+            <li>1/2 and 1/4 playback speed</li>
+            <li>Configurable QWERTY keyboard keys</li>
+            <li>Improved sound engine music data compression (15-30% smaller)</li>
+            <li>Audio expansion volume/low-pass filter configuration</li>
+            <li>S5B and VRC7 and now properly low-pass filtered</li>
+            <li>Ability to re-order songs</li>
+            <li>Hi-DPI support on Linux</li>
+            <li>Quick DPCM source data reload</li>
+            <li>Improved video rendering speed</li>
+          </ul>
+        </description>
+      </release>       
+      <release version="3.0.1" date="2021-06-17">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.1</url>
+        <description>
+          <p>Fixes in 3.0.1</p>
+          <ul>
+            <li>Fixed crash on startup on Linux when RtMidi fails to initialize</li>
+            <li>Fixed fine effect adjustment (SHIFT + drag) when multiple values are selected</li>
+            <li>Fixed race condition when stopping song playback that could cause a crash</li>
+            <li>Fixed small OpenGL leaks</li>
+            <li>Fixed pattern duplication when CTRL+SHIFT were already pressed when starting the drag</li>
+            <li>Fixed import of MIDI files containing polyphonic key pressure events</li>
+            <li>Fixed duplicated labels when exporting projects containing multiple songs to Famitone2 or FamiStudio sound engine</li>
+            <li>Fixed crash when double clicking or left clicking in some cells of grids</li>
+            <li>Fixed export of VRC6 duty cycles to FamiTracker</li>
+            <li>Properly shutting down MIDI input on Windows</li>
+            <li>Adding error message when trying to import NSF using multiple expansion chips</li>
+          </ul>          
+          <p>Changes/Fixes in 3.0.0:</p>
           <ol>
-		<li>Fixed corruption when importing looping samples from .FTI files.</li>
-		<li>Fixed minor graphical issue in piano roll.</li>
-		<li>Fixed issues on Windows 7 installations that are missing some D3D11 components such as KB2670838.</li>
-		<li>Removed 320 kbps MP3 export option since it creates choppy audio.</li>
-          </ol>        
-          <p>Changes/Fixes in 2.4.0:</p>
-          <ol>
-            <li>Basic DPCM sample editor</li>
-            <li>Darker theme and more color choices</li>
-            <li>Ability to use QWERTY keyboard input without using recording mode</li>
-            <li>Slightly reduced audio latency and configurable number of buffered frames</li>
-            <li>Right-clicking anywhere in the background also starts a selection</li>
-            <li>Seek bar can be dragged and respects snapping precision</li>
-            <li>Pattern duplication preserves names when possible</li>
-            <li>Instrument picker tool (hold "I" + click on a note)</li>
-            <li>Paste special in Sequencer</li>
-            <li>Pattern are created automatically when adding notes.</li>
-            <li>Quickly repeat last export by right clicking button or CTRL+SHIFT+E</li>
-            <li>Edit multiple custom patterns at once</li>
-            <li>Video export resolution/framerate options (Contributed by Thomas McGrew)</li>
-            <li>Multiple VRC7 fixes</li>
-            <li>Multiple FamiTracker fixes</li>
-            <li>Multiple sound engine improvements and fixes</li>
+            <li>Redesigned FamiStudio tempo</li>
+            <li>Redesigned note editing</li>
+            <li>MIDI import/export support</li>
+            <li>Oscilloscope in toolbar</li>
+            <li>Optional scrollbars</li>
+            <li>Revamped Mac version</li>
+            <li>1/2 and 1/4 playback speed</li>
+            <li>Configurable QWERTY keyboard keys</li>
+            <li>Improved sound engine music data compression (15-30% smaller)</li>
+            <li>Audio expansion volume/low-pass filter configuration</li>
+            <li>S5B and VRC7 and now properly low-pass filtered</li>
+            <li>Ability to re-order songs</li>
+            <li>Hi-DPI support on Linux</li>
+            <li>Quick DPCM source data reload</li>
+            <li>Improved video rendering speed</li>
           </ol>
         </description>
       </release>     
-      <release version="2.4.0" date="2021-03-08">
-        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.4.0</url>
+      <release version="3.0.0" date="2021-06-01">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.0</url>
         <description>
-          <p>Changes/Fixes in 2.4.0:</p>
+          <p>Changes/Fixes in 3.0.0:</p>
           <ol>
-            <li>Basic DPCM sample editor</li>
-            <li>Darker theme and more color choices</li>
-            <li>Ability to use QWERTY keyboard input without using recording mode</li>
-            <li>Slightly reduced audio latency and configurable number of buffered frames</li>
-            <li>Right-clicking anywhere in the background also starts a selection</li>
-            <li>Seek bar can be dragged and respects snapping precision</li>
-            <li>Pattern duplication preserves names when possible</li>
-            <li>Instrument picker tool (hold "I" + click on a note)</li>
-            <li>Paste special in Sequencer</li>
-            <li>Pattern are created automatically when adding notes.</li>
-            <li>Quickly repeat last export by right clicking button or CTRL+SHIFT+E</li>
-            <li>Edit multiple custom patterns at once</li>
-            <li>Video export resolution/framerate options (Contributed by Thomas McGrew)</li>
-            <li>Multiple VRC7 fixes</li>
-            <li>Multiple FamiTracker fixes</li>
-            <li>Multiple sound engine improvements and fixes</li>
+            <li>Redesigned FamiStudio tempo</li>
+            <li>Redesigned note editing</li>
+            <li>MIDI import/export support</li>
+            <li>Oscilloscope in toolbar</li>
+            <li>Optional scrollbars</li>
+            <li>Revamped Mac version</li>
+            <li>1/2 and 1/4 playback speed</li>
+            <li>Configurable QWERTY keyboard keys</li>
+            <li>Improved sound engine music data compression (15-30% smaller)</li>
+            <li>Audio expansion volume/low-pass filter configuration</li>
+            <li>S5B and VRC7 and now properly low-pass filtered</li>
+            <li>Ability to re-order songs</li>
+            <li>Hi-DPI support on Linux</li>
+            <li>Quick DPCM source data reload</li>
+            <li>Improved video rendering speed</li>
           </ol>
         </description>
-      </release>    
-      <release version="2.3.2" date="2021-01-18">
-        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.2</url>
-        <description>
-          <p>Changes/Fixes in 2.3.2:</p>
-          <ol>
-            <li>Added loop count to video export.</li>
-            <li>Fixed scaling issues on Retina display.</li>
-            <li>Fixed lingering noise when dragging/adding notes in VRC7.</li>
-            <li>Fixed multiple FamiTracker import (Text + Binary) issues/crashes.</li>
-            <li>Fixed potential desync in NSF/sound engine when using delayed notes.</li>
-            <li>Fixed various issues with expansion instruments UI (sliders/checkboxes for VRC7/FDS/N163).</li>
-            <li>Fixed import of older FamiStudio text files (pre 2.3.0).</li>
-            <li>Fixed NSF/sound engine crash when exporting empty arpeggios.</li>
-            <li>Fixed issue with arpeggios sometimes persisting when a song loops.</li>
-          </ol>        
-          <p>Fixes in 2.3.1:</p>
-          <ol>
-            <li>Fixing a GL issue on some distros or hardware configurations leading to an obscure X error.</li>
-          </ol>
-          <p>Original 2.3.0 change log:</p>
-          <ol>
-            <li>MP3 export</li>
-            <li>Video export</li>
-            <li>Song merge functionality</li>
-            <li>Duty cycle effect track support (equivalent of Vxx in FamiTracker) </li>
-            <li>Special paste improvements (repeat, effects, etc.)</li>
-            <li>Special delete</li>
-            <li>Copy patterns to different channels in sequencer</li>
-            <li>Option to display note labels in piano roll</li>
-            <li>FamiTracker tempo improvements (delayed notes, cuts, fixes).</li>
-            <li>Added support for Cxx (Halt) FamiTracker effect.</li>
-            <li>Option to export each channel to a seperate WAV/MP3 file. </li>
-            <li>Small DPCM improvements (Drag drop, bit reverse option)</li>
-            <li>Small tempo improvements</li>
-            <li>Sound engine code size reduction</li>
-          </ol>
-        </description>
-      </release>   
-      <release version="2.3.1" date="2021-01-03">
-        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.0</url>
-        <description>
-          <p>Fixes in 2.3.1:</p>
-          <ol>
-            <li>Fixing a GL issue on some distros or hardware configurations leading to an obscure X error.</li>
-          </ol>
-          <p>Original 2.3.0 change log:</p>
-          <ol>
-            <li>MP3 export</li>
-            <li>Video export</li>
-            <li>Song merge functionality</li>
-            <li>Duty cycle effect track support (equivalent of Vxx in FamiTracker) </li>
-            <li>Special paste improvements (repeat, effects, etc.)</li>
-            <li>Special delete</li>
-            <li>Copy patterns to different channels in sequencer</li>
-            <li>Option to display note labels in piano roll</li>
-            <li>FamiTracker tempo improvements (delayed notes, cuts, fixes).</li>
-            <li>Added support for Cxx (Halt) FamiTracker effect.</li>
-            <li>Option to export each channel to a seperate WAV/MP3 file. </li>
-            <li>Small DPCM improvements (Drag drop, bit reverse option)</li>
-            <li>Small tempo improvements</li>
-            <li>Sound engine code size reduction</li>
-          </ol>
-        </description>
-      </release>    
-      <release version="2.3.0" date="2021-01-03">
-        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.0</url>
-        <description>
-          <ol>
-            <li>MP3 export</li>
-            <li>Video export</li>
-            <li>Song merge functionality</li>
-            <li>Duty cycle effect track support (equivalent of Vxx in FamiTracker) </li>
-            <li>Special paste improvements (repeat, effects, etc.)</li>
-            <li>Special delete</li>
-            <li>Copy patterns to different channels in sequencer</li>
-            <li>Option to display note labels in piano roll</li>
-            <li>FamiTracker tempo improvements (delayed notes, cuts, fixes).</li>
-            <li>Added support for Cxx (Halt) FamiTracker effect.</li>
-            <li>Option to export each channel to a seperate WAV/MP3 file. </li>
-            <li>Small DPCM improvements (Drag drop, bit reverse option)</li>
-            <li>Small tempo improvements</li>
-            <li>Sound engine code size reduction</li>
-          </ol>
-        </description>
-      </release>  
-      <release version="2.2.1" date="2020-10-03">
-        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.2.1</url>
-        <description>
-          <ol>
-            <li>Fixed import of slide notes from FamiStudio Text format.</li>
-            <li>Added option to not trim unused data when exporting to FamiStudio Text format.</li>
-            <li>Fixed crash when exporting to some formats on MacOS</li>
-            <li>Fixed crash when exporting FamiStudio/FamiTone2 SFX longer than 256 bytes.</li>
-            <li>Fixed glibc dependency issue on Linux that go introduced in 2.2.0.</li>
-          </ol>
-        </description>
-      </release>  
-      <release version="2.2.0" date="2020-09-07">
-        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.2.0</url>
-        <description>
-          <ol>
-            <li>Recording mode to record note-by-note using MIDI controller or QWERTY keyboard</li>
-            <li>Arpeggio support</li>
-            <li>Official FamiStudio Sound Engine release</li>
-            <li>Follow mode</li>
-            <li>Displaying the piano roll view range in the sequencer</li>
-            <li>FDS disk export</li>
-            <li>Basic tutorials for first time users</li>
-            <li>Error logging when importing/exporting files</li>
-            <li>Wav export loop count</li>
-            <li>Option to disable dragging sounds when a song is playing</li>
-          </ol>
-        </description>
-      </release>
+    </release>   
+    <release version="2.4.2" date="2021-05-03">
+      <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.4.2</url>
+      <description>
+        <p>Fixes in 2.4.2 (Hotfix)</p>
+        <ol>
+            <li>Fixed crash on startup.</li>
+            <li>Fixed crash when exporting SFX to sound engine from command-line.</li>
+        </ol>          
+        <p>Fixes in 2.4.1 (Hotfix)</p>
+        <ol>
+            <li>Fixed corruption when importing looping samples from .FTI files.</li>
+            <li>Fixed minor graphical issue in piano roll.</li>
+            <li>Fixed issues on Windows 7 installations that are missing some D3D11 components such as KB2670838.</li>
+            <li>Removed 320 kbps MP3 export option since it creates choppy audio.</li>
+        </ol>        
+        <p>Changes/Fixes in 2.4.0:</p>
+        <ol>
+          <li>Basic DPCM sample editor</li>
+          <li>Darker theme and more color choices</li>
+          <li>Ability to use QWERTY keyboard input without using recording mode</li>
+          <li>Slightly reduced audio latency and configurable number of buffered frames</li>
+          <li>Right-clicking anywhere in the background also starts a selection</li>
+          <li>Seek bar can be dragged and respects snapping precision</li>
+          <li>Pattern duplication preserves names when possible</li>
+          <li>Instrument picker tool (hold "I" + click on a note)</li>
+          <li>Paste special in Sequencer</li>
+          <li>Pattern are created automatically when adding notes.</li>
+          <li>Quickly repeat last export by right clicking button or CTRL+SHIFT+E</li>
+          <li>Edit multiple custom patterns at once</li>
+          <li>Video export resolution/framerate options (Contributed by Thomas McGrew)</li>
+          <li>Multiple VRC7 fixes</li>
+          <li>Multiple FamiTracker fixes</li>
+          <li>Multiple sound engine improvements and fixes</li>
+        </ol>
+      </description>
+    </release>     
+    <release version="2.4.0" date="2021-03-08">
+      <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.4.0</url>
+      <description>
+        <p>Changes/Fixes in 2.4.0:</p>
+        <ol>
+          <li>Basic DPCM sample editor</li>
+          <li>Darker theme and more color choices</li>
+          <li>Ability to use QWERTY keyboard input without using recording mode</li>
+          <li>Slightly reduced audio latency and configurable number of buffered frames</li>
+          <li>Right-clicking anywhere in the background also starts a selection</li>
+          <li>Seek bar can be dragged and respects snapping precision</li>
+          <li>Pattern duplication preserves names when possible</li>
+          <li>Instrument picker tool (hold "I" + click on a note)</li>
+          <li>Paste special in Sequencer</li>
+          <li>Pattern are created automatically when adding notes.</li>
+          <li>Quickly repeat last export by right clicking button or CTRL+SHIFT+E</li>
+          <li>Edit multiple custom patterns at once</li>
+          <li>Video export resolution/framerate options (Contributed by Thomas McGrew)</li>
+          <li>Multiple VRC7 fixes</li>
+          <li>Multiple FamiTracker fixes</li>
+          <li>Multiple sound engine improvements and fixes</li>
+        </ol>
+      </description>
+    </release>    
+    <release version="2.3.2" date="2021-01-18">
+      <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.2</url>
+      <description>
+        <p>Changes/Fixes in 2.3.2:</p>
+        <ol>
+          <li>Added loop count to video export.</li>
+          <li>Fixed scaling issues on Retina display.</li>
+          <li>Fixed lingering noise when dragging/adding notes in VRC7.</li>
+          <li>Fixed multiple FamiTracker import (Text + Binary) issues/crashes.</li>
+          <li>Fixed potential desync in NSF/sound engine when using delayed notes.</li>
+          <li>Fixed various issues with expansion instruments UI (sliders/checkboxes for VRC7/FDS/N163).</li>
+          <li>Fixed import of older FamiStudio text files (pre 2.3.0).</li>
+          <li>Fixed NSF/sound engine crash when exporting empty arpeggios.</li>
+          <li>Fixed issue with arpeggios sometimes persisting when a song loops.</li>
+        </ol>        
+        <p>Fixes in 2.3.1:</p>
+        <ol>
+          <li>Fixing a GL issue on some distros or hardware configurations leading to an obscure X error.</li>
+        </ol>
+        <p>Original 2.3.0 change log:</p>
+        <ol>
+          <li>MP3 export</li>
+          <li>Video export</li>
+          <li>Song merge functionality</li>
+          <li>Duty cycle effect track support (equivalent of Vxx in FamiTracker) </li>
+          <li>Special paste improvements (repeat, effects, etc.)</li>
+          <li>Special delete</li>
+          <li>Copy patterns to different channels in sequencer</li>
+          <li>Option to display note labels in piano roll</li>
+          <li>FamiTracker tempo improvements (delayed notes, cuts, fixes).</li>
+          <li>Added support for Cxx (Halt) FamiTracker effect.</li>
+          <li>Option to export each channel to a seperate WAV/MP3 file. </li>
+          <li>Small DPCM improvements (Drag drop, bit reverse option)</li>
+          <li>Small tempo improvements</li>
+          <li>Sound engine code size reduction</li>
+        </ol>
+      </description>
+    </release>   
+    <release version="2.3.1" date="2021-01-03">
+      <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.0</url>
+      <description>
+        <p>Fixes in 2.3.1:</p>
+        <ol>
+          <li>Fixing a GL issue on some distros or hardware configurations leading to an obscure X error.</li>
+        </ol>
+        <p>Original 2.3.0 change log:</p>
+        <ol>
+          <li>MP3 export</li>
+          <li>Video export</li>
+          <li>Song merge functionality</li>
+          <li>Duty cycle effect track support (equivalent of Vxx in FamiTracker) </li>
+          <li>Special paste improvements (repeat, effects, etc.)</li>
+          <li>Special delete</li>
+          <li>Copy patterns to different channels in sequencer</li>
+          <li>Option to display note labels in piano roll</li>
+          <li>FamiTracker tempo improvements (delayed notes, cuts, fixes).</li>
+          <li>Added support for Cxx (Halt) FamiTracker effect.</li>
+          <li>Option to export each channel to a seperate WAV/MP3 file. </li>
+          <li>Small DPCM improvements (Drag drop, bit reverse option)</li>
+          <li>Small tempo improvements</li>
+          <li>Sound engine code size reduction</li>
+        </ol>
+      </description>
+    </release>    
+    <release version="2.3.0" date="2021-01-03">
+      <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.0</url>
+      <description>
+        <ol>
+          <li>MP3 export</li>
+          <li>Video export</li>
+          <li>Song merge functionality</li>
+          <li>Duty cycle effect track support (equivalent of Vxx in FamiTracker) </li>
+          <li>Special paste improvements (repeat, effects, etc.)</li>
+          <li>Special delete</li>
+          <li>Copy patterns to different channels in sequencer</li>
+          <li>Option to display note labels in piano roll</li>
+          <li>FamiTracker tempo improvements (delayed notes, cuts, fixes).</li>
+          <li>Added support for Cxx (Halt) FamiTracker effect.</li>
+          <li>Option to export each channel to a seperate WAV/MP3 file. </li>
+          <li>Small DPCM improvements (Drag drop, bit reverse option)</li>
+          <li>Small tempo improvements</li>
+          <li>Sound engine code size reduction</li>
+        </ol>
+      </description>
+    </release>  
+    <release version="2.2.1" date="2020-10-03">
+      <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.2.1</url>
+      <description>
+        <ol>
+          <li>Fixed import of slide notes from FamiStudio Text format.</li>
+          <li>Added option to not trim unused data when exporting to FamiStudio Text format.</li>
+          <li>Fixed crash when exporting to some formats on MacOS</li>
+          <li>Fixed crash when exporting FamiStudio/FamiTone2 SFX longer than 256 bytes.</li>
+          <li>Fixed glibc dependency issue on Linux that go introduced in 2.2.0.</li>
+        </ol>
+      </description>
+    </release>  
+    <release version="2.2.0" date="2020-09-07">
+      <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.2.0</url>
+      <description>
+        <ol>
+          <li>Recording mode to record note-by-note using MIDI controller or QWERTY keyboard</li>
+          <li>Arpeggio support</li>
+          <li>Official FamiStudio Sound Engine release</li>
+          <li>Follow mode</li>
+          <li>Displaying the piano roll view range in the sequencer</li>
+          <li>FDS disk export</li>
+          <li>Basic tutorials for first time users</li>
+          <li>Error logging when importing/exporting files</li>
+          <li>Wav export loop count</li>
+          <li>Option to disable dragging sounds when a song is playing</li>
+        </ol>
+      </description>
+    </release>
   </releases>
 </component>
