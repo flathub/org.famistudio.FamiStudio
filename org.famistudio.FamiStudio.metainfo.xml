@@ -41,7 +41,7 @@
             <li>Option to auto-save copy every 2 minutes</li>
             <li>Option for thicker scroll bars</li>
             <li>Minor sequencer selection improvements</li>
-            <li>MacOS Monterey Beta support, Beta 3 or newer needed (Thanks OpenTK team!)</li>
+            <li>MacOS Monterey Beta support, Beta 3 or newer needed (Thanks OpenTK team!) </li>
             <li>Sound Engine CC65 bindings (Contribution from jroweboy!)</li>
           </ol>
         </description>
