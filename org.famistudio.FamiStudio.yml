@@ -16,7 +16,7 @@ finish-args:
   - --share=ipc
   - --socket=x11
   - --socket=pulseaudio
-# Read and write projects
+# Read and write projects 
   - --filesystem=home
 # For the Mono runtime
   - --env=MONO_GAC_PREFIX=${FLATPAK_DEST}
