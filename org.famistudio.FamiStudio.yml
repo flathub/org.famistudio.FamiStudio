@@ -4,13 +4,6 @@ runtime-version: '3.38'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
-add-extensions:
-  org.freedesktop.Platform.ffmpeg-full:
-    directory: lib/ffmpeg
-    version: '20.08'
-    add-ld-path: "."
-    autodelete: true
-    no-autodownload: false  
 command: famistudio.sh
 finish-args:
   - --share=ipc
