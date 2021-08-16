@@ -21,6 +21,40 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
+      <release version="3.1.1" date="2021-08-16">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.1.1</url>
+        <description>
+          <p>Fixes in 3.1.1</p>
+          <ul>
+            <li>Fixed piano roll piano keys not highlighting when exporting video</li>
+            <li>Fixed application stalling when closing on MacOS</li>
+            <li>Fixed "advanced properties" buttons growing when using >100% scaling on Windows</li>
+            <li>Adding failsafe when time signature cannot be computed when exporting MIDI</li>
+            <li>Associating FMS files with FamiStudio on startup in portable mode</li>
+            <li>Experimental support for OpenH264 in video export</li>
+          </ul>          
+          <p>Changes in 3.1.0 (Last major release):</p>
+          <ol>
+            <li>OGG export</li>
+            <li>Oscilloscope video export</li>
+            <li>Stereo WAV/MP3/OGG/Video export</li>
+            <li>Metronome</li>
+            <li>Noise slides</li>
+            <li>Volume slides</li>
+            <li>Noise emulation improvements</li>
+            <li>Portable mode (save settings in root folder if portable.txt is detected)</li>
+            <li>Import samples from other projects</li>
+            <li>Loop in selection mode</li>
+            <li>ROM export now uses MMC3 mapper</li>
+            <li>Fine tuning + DMC initial value parameters on DPCM samples</li>
+            <li>Option to auto-save copy every 2 minutes</li>
+            <li>Option for thicker scroll bars</li>
+            <li>Minor sequencer selection improvements</li>
+            <li>MacOS Monterey Beta support, Beta 3 or newer needed (Thanks OpenTK team!) </li>
+            <li>Sound Engine CC65 bindings (Contribution from jroweboy!)</li>
+          </ol>
+        </description>
+      </release>        
       <release version="3.1.0" date="2021-08-05">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.1.0</url>
         <description>
