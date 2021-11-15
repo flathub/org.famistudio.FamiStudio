@@ -4,13 +4,6 @@ runtime-version: '3.38'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
-add-extensions:
-  org.freedesktop.Platform.ffmpeg-full:
-    directory: lib/ffmpeg
-    version: '20.08'
-    add-ld-path: "."
-    autodelete: true
-    no-autodownload: false  
 cleanup-commands:
   - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg    
 command: famistudio.sh
@@ -57,8 +50,8 @@ modules:
       - ln -sf /usr/lib/x86_64-linux-gnu/libopenal.so.1 /app/bin/libopenal32.so
     sources:
       - type: archive
-        url: https://github.com/BleuBleu/FamiStudio/releases/download/3.1.1/FamiStudio311-LinuxAMD64.zip
-        sha256: e6047de4a48a543c2423a9ca3fb4b5f09fe775ee6201190f60d8ef901e30f909
+        url: https://github.com/BleuBleu/FamiStudio/releases/download/3.2.0/FamiStudio311-LinuxAMD64.zip
+        sha256: 64975e32fdbacbc20b115389ff04b255b2f2a67bfceaed15bf7e9fc22af6f91b
         strip-components: 0
 
   - name: extrafiles

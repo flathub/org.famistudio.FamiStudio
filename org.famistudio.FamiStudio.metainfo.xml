@@ -21,6 +21,20 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
+      <release version="3.2.0" date="2021-11-10">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.2.0</url>
+        <description>
+          <p>Changes in 3.2.0:</p>
+          <ol>
+            <li>Android app (free on Play Store)</li>
+            <li>Multi-expansion support</li>
+            <li>Proper emulation of triangle/noise/DPCM volume interactions</li>
+            <li>Significant graphic optimizations, especially on lower-end machines or large projects.</li>
+            <li>Minor quality of life features</li>
+            <li>Minor cosmetic UI changes (icons, envelope editor, coloring piano with DPCM colors, etc.)</li>
+          </ol>
+        </description>
+      </release>            
       <release version="3.1.1" date="2021-08-16">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.1.1</url>
         <description>
