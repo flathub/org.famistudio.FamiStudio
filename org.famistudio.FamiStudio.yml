@@ -18,23 +18,11 @@ finish-args:
 # Midi keyboard input
   - --device=all
 modules:
-  - shared-modules/gtk2/gtk2.json
 
   - name: mono6
     buildsystem: simple
     build-commands:
       - /usr/lib/sdk/mono6/install.sh
-
-  - name: gtk-sharp2
-    buildsystem: simple
-    build-commands:
-      - export PATH=$PATH:/usr/lib/sdk/mono6/bin && export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+$LD_LIBRARY_PATH:}/usr/lib/sdk/mono6/lib && export PKG_CONFIG_PATH=${PKG_CONFIG_PATH:+$PKG_CONFIG_PATH:}/usr/lib/sdk/mono6/lib/pkgconfig && ./configure --prefix=/app && make && make install
-    sources:
-      - type: archive
-        url: https://download.mono-project.com/sources/gtk-sharp212/gtk-sharp-2.12.45.tar.gz
-        sha256: 02680578e4535441064aac21d33315daa009d742cab8098ac8b2749d86fffb6a
-      - type: patch
-        path: disambiguate-system.range-and-gtk.range.patch
 
   - name: extralibs
     buildsystem: simple
@@ -50,8 +38,8 @@ modules:
       - ln -sf /usr/lib/x86_64-linux-gnu/libopenal.so.1 /app/bin/libopenal32.so
     sources:
       - type: archive
-        url: https://github.com/BleuBleu/FamiStudio/releases/download/3.3.1/FamiStudio331-LinuxAMD64.zip
-        sha256: 632afafde1b8e349998edb0c9d82719416e515ced764d67affb98d53b6dd607a
+        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.0.0/FamiStudio400-LinuxAMD64.zip
+        sha256: 542a01f09dbe5f56e3cbbf976969d547725a2ee22cc94070cf61b06a976f25f7
         strip-components: 0
 
   - name: extrafiles
