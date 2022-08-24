@@ -26,32 +26,16 @@
         <description>
           <p>Changes in 4.0.0:</p>
           <ul>
-            <li>Revamped desktop version :</li>
-            <ul>
-              <li>Redesigned controls, more similar to mobile version : Context menus, Gizmos, etc.</li>
-              <li>Based on GLFW using custom drawn widgets, consistent across Win/MacOS/Linux</li>
-              <li>Getting rid of all dependencies to OpenTK, WinForms, GTK# and System.Drawing in preparation to eventual migration to modern .NET.</li>
-              <li>Animated GIFs for intro tutorial</li>
-            </ul>
+            <li>Revamped desktop version</li>
             <li>More control over sequencer height and ability to hide unused channels on desktop</li>
             <li>Support to multiple audio expansions with EPSM</li>
             <li>Support for multiple waveforms for N163</li>
             <li>Support for single audio expansions for ROM export </li>
             <li>Wave resampling for N163/FDS waveforms, import WAV files and adjust period and offset.</li>
             <li>Basic NSFe export support, only track names and durations for now.</li>
-            <li>Improved oscilloscope stability:</li>
-            <ul>
-              <li>Use of emulation-generated triggers when rendering oscilloscope in exported video or in toolbar when previewing instruments.</li>
-              <li>Improved trigger detection for toolbar oscilloscope when playing a song (using "peak speed trigger" algorithm).</li>
-            </ul> 
+            <li>Improved oscilloscope stability</li>
             <li>Audio delay effect when exporting video or audio.</li>
             <li>Snapping improvements, most notably:</li>
-            <ul>
-              <li>**Alt+1**, **Alt+2**, **Alt+3** and **Alt+4** quickly changes between common snapping values</li>
-              <li>Hold **Alt** anytime when resizing or moving notes to temporarily disable snapping</li>
-              <li>Context menu to set snapping to a specific note duration</li>
-              <li>Option to snap effect values</li>
-            </ul> 
           </ul>
         </description>
       </release>         
