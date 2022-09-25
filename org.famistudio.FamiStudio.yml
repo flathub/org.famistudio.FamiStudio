@@ -38,8 +38,8 @@ modules:
       - ln -sf /usr/lib/x86_64-linux-gnu/libopenal.so.1 /app/bin/libopenal32.so
     sources:
       - type: archive
-        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.0.3/FamiStudio403-LinuxAMD64.zip
-        sha256: b6e7e5c3625fea514e9c8573d4298105a040cd8f863fa5933894834fffa512b3
+        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.0.4/FamiStudio404-LinuxAMD64.zip
+        sha256: 576590A1E3C624064D7E00A1DE71D2D66BE46186851F49427231DDA0DFCF8244
         strip-components: 0
 
   - name: extrafiles

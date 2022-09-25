@@ -21,6 +21,50 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
+      <release version="4.0.4" date="2022-09-25">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.2</url>
+        <description>
+          <p>Fixes in 4.0.4:</p>
+          <ul>
+            <li>Fixed video export when there are more than 32 channels in a project.</li>
+          </ul>          
+          <p>Fixes in 4.0.3:</p>
+          <ul>
+            <li>Fixed drop-down lists requiring double-clicks.</li>
+          </ul>
+          <p>Fixes in 4.0.2:</p>
+          <ul>
+            <li>Added option for trigger algorithm in oscilloscope export (desktop only)</li>
+            <li>Fixed files without extensions not displaying correctly in the file dialog on Linux</li>
+            <li>Fixed drag and drop of files containing unicode characters</li>
+            <li>Fixed crash when saving with CTRL+S while editing something</li>
+            <li>Fixed crash when exporting NSF/ROM with instrument containing dashes in their names</li>
+            <li>Fixed crash when attempting to export a FDS project as a NES ROM</li>
+            <li>Fixed crash when importing NSF containing non-ASCII characters on Linux/MacOS</li>
+            <li>Fixed crash when importing some Famitracker modules/instruments with N163 instruments</li>
+            <li>Added safeguards for import of Famitracker N163 instruments that were generated in forks</li>
+            <li>Added option for Alt+Right-click zoom gesture (Input section of the settings), off by default</li>
+            <li>Fixed typos</li>
+          </ul>
+          <p>Fixes in 4.0.1:</p>
+          <ul>
+            <li>Fixed file dialog on Linux.</li>
+          </ul>
+          <p>Changes in 4.0.0:</p>
+          <ul>
+            <li>Revamped desktop version</li>
+            <li>More control over sequencer height and ability to hide unused channels on desktop</li>
+            <li>Support to multiple audio expansions with EPSM</li>
+            <li>Support for multiple waveforms for N163</li>
+            <li>Support for single audio expansions for ROM export </li>
+            <li>Wave resampling for N163/FDS waveforms, import WAV files and adjust period and offset.</li>
+            <li>Basic NSFe export support, only track names and durations for now.</li>
+            <li>Improved oscilloscope stability</li>
+            <li>Audio delay effect when exporting video or audio.</li>
+            <li>Snapping improvements, most notably:</li>
+          </ul>
+        </description>
+      </release>          
       <release version="4.0.3" date="2022-09-25">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.2</url>
         <description>
