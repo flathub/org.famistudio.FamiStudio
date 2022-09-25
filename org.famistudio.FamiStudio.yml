@@ -39,7 +39,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/BleuBleu/FamiStudio/releases/download/4.0.4/FamiStudio404-LinuxAMD64.zip
-        sha256: 576590A1E3C624064D7E00A1DE71D2D66BE46186851F49427231DDA0DFCF8244
+        sha256: 576590a1e3c624064d7e00a1de71d2d66be46186851f49427231dda0dfcf8244
         strip-components: 0
 
   - name: extrafiles
