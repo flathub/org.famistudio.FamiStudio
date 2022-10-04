@@ -1,7 +1,7 @@
 app-id: org.famistudio.FamiStudio
-runtime: org.gnome.Platform
-runtime-version: '3.38'
-sdk: org.gnome.Sdk
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
 cleanup-commands:
@@ -41,6 +41,13 @@ modules:
         url: https://github.com/BleuBleu/FamiStudio/releases/download/4.0.4/FamiStudio404-LinuxAMD64.zip
         sha256: 576590a1e3c624064d7e00a1de71d2d66be46186851f49427231dda0dfcf8244
         strip-components: 0
+        x-checker-data:
+          is-main-source: true
+          type: json
+          url: https://api.github.com/repos/BleuBleu/FamiStudio/releases/latest
+          version-query: .tag_name
+          url-query: .assets[] | select(.name|endswith("LinuxAMD64.zip")) | .browser_download_url
+          timestamp-query: .published_at
 
   - name: extrafiles
     buildsystem: simple
