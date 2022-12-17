@@ -21,6 +21,28 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
+      <release version="4.0.5" date="2022-12-17">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.5</url>
+        <description>
+          <p>Fixes in 4.0.5:</p>
+          <ul>
+            <li>Too many fixes to list, please see <a href='https://famistudio.org/doc/changelog/index.html'>change log</a>.</li>
+          </ul>          
+          <p>Changes in 4.0.0 (last major release):</p>
+          <ul>
+            <li>Revamped desktop version</li>
+            <li>More control over sequencer height and ability to hide unused channels on desktop</li>
+            <li>Support to multiple audio expansions with EPSM</li>
+            <li>Support for multiple waveforms for N163</li>
+            <li>Support for single audio expansions for ROM export </li>
+            <li>Wave resampling for N163/FDS waveforms, import WAV files and adjust period and offset.</li>
+            <li>Basic NSFe export support, only track names and durations for now.</li>
+            <li>Improved oscilloscope stability</li>
+            <li>Audio delay effect when exporting video or audio.</li>
+            <li>Snapping improvements, most notably:</li>
+          </ul>
+        </description>
+      </release>             
       <release version="4.0.4" date="2022-09-25">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.2</url>
         <description>
