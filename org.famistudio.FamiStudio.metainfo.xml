@@ -19,8 +19,9 @@
   <url type="homepage">https://famistudio.org//</url>
   <url type="bugtracker">https://github.com/BleuBleu/FamiStudio/issues</url>
   <url type="help">https://famistudio.org/doc/index.html</url>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.0.5" date="2022-12-17"/>
       <release version="4.0.4" date="2022-09-25">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.2</url>
         <description>
@@ -358,7 +359,7 @@
           <ul>
             <li>Fixed piano roll piano keys not highlighting when exporting video</li>
             <li>Fixed application stalling when closing on MacOS</li>
-            <li>Fixed "advanced properties" buttons growing when using >100% scaling on Windows</li>
+            <li>Fixed "advanced properties" buttons growing when using &gt;100% scaling on Windows</li>
             <li>Adding failsafe when time signature cannot be computed when exporting MIDI</li>
             <li>Associating FMS files with FamiStudio on startup in portable mode</li>
             <li>Experimental support for OpenH264 in video export</li>

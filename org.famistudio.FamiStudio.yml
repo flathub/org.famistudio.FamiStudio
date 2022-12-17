@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
 cleanup-commands:
-  - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg    
+  - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg
 command: famistudio.sh
 finish-args:
   - --share=ipc
@@ -27,8 +27,10 @@ modules:
   - name: extralibs
     buildsystem: simple
     build-commands:
-      - cp -ar /usr/lib/sdk/mono6/lib/mono/gac/System.Drawing /app/lib/mono/gac/ && rm -f /app/lib/mono/gac/System.Drawing/*/*.pdb
-      - cp -ar /usr/lib/sdk/mono6/lib/mono/gac/System.Windows.Forms /app/lib/mono/gac/ && rm -f /app/lib/mono/gac/System.Windows.Forms/*/*.pdb
+      - cp -ar /usr/lib/sdk/mono6/lib/mono/gac/System.Drawing /app/lib/mono/gac/ &&
+        rm -f /app/lib/mono/gac/System.Drawing/*/*.pdb
+      - cp -ar /usr/lib/sdk/mono6/lib/mono/gac/System.Windows.Forms /app/lib/mono/gac/
+        && rm -f /app/lib/mono/gac/System.Windows.Forms/*/*.pdb
 
   - name: app
     buildsystem: simple
@@ -38,8 +40,8 @@ modules:
       - ln -sf /usr/lib/x86_64-linux-gnu/libopenal.so.1 /app/bin/libopenal32.so
     sources:
       - type: archive
-        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.0.4/FamiStudio404-LinuxAMD64.zip
-        sha256: 576590a1e3c624064d7e00a1de71d2d66be46186851f49427231dda0dfcf8244
+        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.0.5/FamiStudio405-LinuxAMD64.zip
+        sha256: b321040eb9b3d6e70b9789f545dad338fc27ae6f8a0b1c8bda51a480752d73ee
         strip-components: 0
         x-checker-data:
           is-main-source: true
