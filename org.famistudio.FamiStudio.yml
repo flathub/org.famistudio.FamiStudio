@@ -1,9 +1,15 @@
 app-id: org.famistudio.FamiStudio
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.mono6
+  - org.freedesktop.Sdk.Extension.dotnet6
+build-options:
+  append-path: /usr/lib/sdk/dotnet6/bin
+  append-ld-library-path: /usr/lib/sdk/dotnet6/lib
+  env:
+    PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet6/lib/pkgconfig
+
 cleanup-commands:
   - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg    
 command: famistudio.sh
@@ -13,33 +19,19 @@ finish-args:
   - --socket=pulseaudio
 # Read and write projects 
   - --filesystem=home
-# For the Mono runtime
-  - --env=MONO_GAC_PREFIX=${FLATPAK_DEST}
 # Midi keyboard input
   - --device=all
 modules:
-
-  - name: mono6
-    buildsystem: simple
-    build-commands:
-      - /usr/lib/sdk/mono6/install.sh
-
-  - name: extralibs
-    buildsystem: simple
-    build-commands:
-      - cp -ar /usr/lib/sdk/mono6/lib/mono/gac/System.Drawing /app/lib/mono/gac/ && rm -f /app/lib/mono/gac/System.Drawing/*/*.pdb
-      - cp -ar /usr/lib/sdk/mono6/lib/mono/gac/System.Windows.Forms /app/lib/mono/gac/ && rm -f /app/lib/mono/gac/System.Windows.Forms/*/*.pdb
 
   - name: app
     buildsystem: simple
     build-commands:
       - install -d /app/bin/
       - cp -r * /app/bin/
-      - ln -sf /usr/lib/x86_64-linux-gnu/libopenal.so.1 /app/bin/libopenal32.so
     sources:
       - type: archive
-        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.0.6/FamiStudio406-LinuxAMD64.zip
-        sha256: fc08ea250637712033967e7091d81baf1b03809d149e260ebc5aabe720db853b
+        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.1.0/FamiStudio410-LinuxAMD64.zip
+        sha256: 4fc6d215d5b3e2c7974241a860ccc83027d83d3fdff8bacadc9212b14c0c5c6e
         strip-components: 0
         x-checker-data:
           is-main-source: true
@@ -52,6 +44,7 @@ modules:
   - name: extrafiles
     buildsystem: simple
     build-commands:
+      - install.sh
       - install -Dm755 famistudio.sh ${FLATPAK_DEST}/bin/famistudio.sh
       - install -Dm644 org.famistudio.FamiStudio.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/org.famistudio.FamiStudio.svg
       - install -Dm644 org.famistudio.FamiStudio.desktop ${FLATPAK_DEST}/share/applications/org.famistudio.FamiStudio.desktop

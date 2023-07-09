@@ -21,6 +21,46 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1" />
   <releases>
+      <release version="4.1.0" date="2023-07-09">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.1.0</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>DPCM improvements:</li>
+            <ul>
+              <li>No more "DPCM instrument", each instrument can have DPCM samples assigned (a-la FamiTracker)</li>
+              <li>Up to 256KB of samples using bank switching.</li>
+            </ul>
+            <li>Configurable keyboard shortcuts</li>
+            <li>Text rendering changes, small text may look slightly blurrier </li>
+            <li>More UI scaling % options</li>
+            <li>More context menus options throughout the app</li>
+            <li>Option to mix N163 or not</li>
+            <li>Project explorer sorting improvements</li>
+            <li>NSF import support on Android</li>
+            <li>Stereo and delay export support on Android</li>
+            <li>Sunsoft 5B noise support (Perkka contribution)</li>
+            <li>VGM/WAV code cleanup (alexmush contribution)</li>
+            <li>VGM import support (Perkka and alexmush contribution)</li>
+            <li>Translations:</li>
+            <ul>
+              <li>Spanish (NicolAR contribution)</li>
+              <li>Portuguese (BeepsNBoops contribution)</li>
+              <li>Simplified chinese (xwjcool123 and FRC contribution)</li>
+            </ul>
+          </ul>
+          <p>System Requirement Changes:</p>
+          <ul>
+            <li>Windows version is now 64-bit and targets .NET 5.0</li>
+            <li>Linux/MacOS versions now uses .NET 6.0. Mono is not longer used (See [installation](install.md) page for .NET download links)</li>
+            <li>MacOS now requires at least Catalina and will run natively on ARM if you install the ARM version of .NET</li>
+            <li>All desktop version now requires OpenGL 3.3</li>
+            <li>Android version now requires OpenGL ES 2.0</li>
+            <li>Windows 7 and 32-bit systems are longer supported</li>
+          </ul>          
+        </description>
+      </release>          
+
       <release version="4.0.6" date="2022-12-20">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.6</url>
         <description>
