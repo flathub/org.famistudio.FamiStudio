@@ -42,12 +42,7 @@
             <li>Sunsoft 5B noise support (Perkka contribution)</li>
             <li>VGM/WAV code cleanup (alexmush contribution)</li>
             <li>VGM import support (Perkka and alexmush contribution)</li>
-            <li>Translations:</li>
-            <ul>
-              <li>Spanish (NicolAR contribution)</li>
-              <li>Portuguese (BeepsNBoops contribution)</li>
-              <li>Simplified chinese (xwjcool123 and FRC contribution)</li>
-            </ul>
+            <li>Spanish, Portuguese and Chinese Translations (NicolAR, BeepsNBoops, xwjcool123 and FRC contribution)</li>
           </ul>
           <p>System Requirement Changes:</p>
           <ul>
