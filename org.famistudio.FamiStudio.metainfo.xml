@@ -26,11 +26,7 @@
         <description>
           <p>Changes/Fixes:</p>
           <ul>
-            <li>DPCM improvements:</li>
-            <ul>
-              <li>No more "DPCM instrument", each instrument can have DPCM samples assigned (a-la FamiTracker)</li>
-              <li>Up to 256KB of samples using bank switching.</li>
-            </ul>
+            <li>DPCM improvements, each instrument can have DPCM samples assigned, up to 256KB of samples</li>
             <li>Configurable keyboard shortcuts</li>
             <li>Text rendering changes, small text may look slightly blurrier </li>
             <li>More UI scaling % options</li>
