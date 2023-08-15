@@ -21,6 +21,25 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.1.2" date="2023-08-15">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.1.2</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>Fixed instrument context menu disappearing when using a left-click</li>
+            <li>Fixed "Follow Mode" jittering when using small % values</li>
+            <li>Fixed out of range volumes when importing .fti containing FDS instruments</li>
+            <li>Fixed effect icons sometimes visible past the end of a pattern</li>
+            <li>Fixed issue where instruments fail to load properly when a stop note is used before any other notes</li>
+            <li>Fixed crash when playing a note from all channels with all expansions enabled</li>
+            <li>Fixed a couple of minor issues with demo songs</li>
+            <li>Fixed N163 emulation issue where waves where not properly biased by -8</li>
+            <li>OPNI instrument import support for EPSM instruments (Perkka contribution)</li>
+            <li>Minor localization fixes</li>
+            <li>An APK of the Android version is now available for download, but no support will be provided if it does not work on your device</li>
+          </ul>
+        </description>
+      </release>      
       <release version="4.1.1" date="2023-07-22"/>
       <release version="4.1.0" date="2023-07-09">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.1.0</url>
