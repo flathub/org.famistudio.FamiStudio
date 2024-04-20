@@ -4,6 +4,7 @@
   <launchable type="desktop-id">org.famistudio.FamiStudio.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
+  <developer_name>BleuBleu</developer_name>
   <name>FamiStudio</name>
   <summary>FamiStudio NES Music Editor</summary>
   <description>
@@ -14,6 +15,7 @@
   <screenshots>
     <screenshot type="default">
       <image>https://famistudio.org/twitter_card.png</image>
+      <caption>FamiStudio</caption>
     </screenshot>
   </screenshots>
   <url type="homepage">https://famistudio.org/</url>
