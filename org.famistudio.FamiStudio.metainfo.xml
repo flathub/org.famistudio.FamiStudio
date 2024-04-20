@@ -36,7 +36,7 @@
             <li>More filtering options for audio expansions &amp; ability to store settings in project</li>
             <li>Support for up to 256 instruments (for both regular and expansion) in sound engine</li>
             <li>German translation (thanks Arda &amp; VRC6Lover123!)</li>
-            <li>Audio backend improvements:<ul>
+            <li>Audio backend improvements</li>
             <li>Reduced audio latency on all platform </li>
             <li>Switch to WASAPI on Windows (non-exclusive mode)</li>
             <li>Audio device change detection &amp; improved BT headphones support on MacOS</li>
