@@ -40,27 +40,10 @@
             <li>Reduced audio latency on all platform </li>
             <li>Switch to WASAPI on Windows (non-exclusive mode)</li>
             <li>Audio device change detection &amp; improved BT headphones support on MacOS</li>
+            <li>Video export improvements</li>
+            <li>Small quality of life improvements</li>
           </ul>
-          </li>
-            <li>Video export improvements: 
-              <ul>
-                <li>Unified piano roll mode</li>
-                <li>Piano roll 3D effect</li>
-                <li>Option to overlay registers</li>
-                <li>Preview mode</li>
-              </ul>
-            </li>
-          <li>Small quality of life improvements:
-            <ul>
-              <li>Eraser mode</li>
-              <li>Ability to copy samples between instruments</li>
-              <li>Ability to type effect values and project explorer parameters</li>
-              <li>Function to replace specific instruments</li>
-              <li>Logarithmic sliders for effects and parameters with huge values</li>
-            </ul>
-          </li>
-          </ul>
-            <p>Breaking/Behavior changes:</p>
+          <p>Breaking/Behavior changes:</p>
           <ul>
             <li>FDS mod speed/depth effects will be resetted to the instrument values on notes with an attack.</li>
             <li>FDS emulation now matches the hardware much more closely. Some instruments may now sound very different.</li>
