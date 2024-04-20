@@ -13,7 +13,7 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://famistudio.org/banner.png</image>
+      <image>https://famistudio.org/twitter_card.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://famistudio.org/</url>
@@ -21,6 +21,58 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.2.0" date="2024-04-20">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.2.0</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>S5B envelope support (S5B &amp; EPSM)</li>
+            <li>FDS auto-modulation support</li>
+            <li>FDS emulation improvements : Proper filtering, DAC emulation &amp; fixes.</li>
+            <li>Phase reset support</li>
+            <li>Accurate seek support (fully emulate entire song from start, useful for phase resets)</li>
+            <li>Allow disabling attack on notes if all instrument envelopes matches (useful for FM channels)</li>
+            <li>Folders support in Project Explorer</li>
+            <li>More filtering options for audio expansions &amp; ability to store settings in project</li>
+            <li>Support for up to 256 instruments (for both regular and expansion) in sound engine</li>
+            <li>German translation (thanks Arda &amp; VRC6Lover123!)</li>
+            <li>Audio backend improvements:<ul>
+            <li>Reduced audio latency on all platform </li>
+            <li>Switch to WASAPI on Windows (non-exclusive mode)</li>
+            <li>Audio device change detection &amp; improved BT headphones support on MacOS</li>
+          </ul>
+          </li>
+            <li>Video export improvements: 
+              <ul>
+                <li>Unified piano roll mode</li>
+                <li>Piano roll 3D effect</li>
+                <li>Option to overlay registers</li>
+                <li>Preview mode</li>
+              </ul>
+            </li>
+          <li>Small quality of life improvements:
+            <ul>
+              <li>Eraser mode</li>
+              <li>Ability to copy samples between instruments</li>
+              <li>Ability to type effect values and project explorer parameters</li>
+              <li>Function to replace specific instruments</li>
+              <li>Logarithmic sliders for effects and parameters with huge values</li>
+            </ul>
+          </li>
+          </ul>
+            <p>Breaking/Behavior changes:</p>
+          <ul>
+            <li>FDS mod speed/depth effects will be resetted to the instrument values on notes with an attack.</li>
+            <li>FDS emulation now matches the hardware much more closely. Some instruments may now sound very different.</li>
+            <li>S5B/EPSM noise no longer has a "NOP" frequency, noise frequency will be set if it is enabled by the mixer envelope. </li>
+          </ul>
+          <p>System Requirement Changes:</p>
+          <ul>
+            <li>Upgraded to .NET 7.0</li>
+            <li>Minimum OpenGL requirement for Desktop lowered to OpenGL 3.0 (was 3.3)</li>
+          </ul>
+        </description>
+      </release>          
       <release version="4.1.3" date="2023-09-04">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.1.3</url>
         <description>
