@@ -23,6 +23,28 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.2.1" date="2024-05-26">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.2.1</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>Fixed MSI installer pointing to .NET 5.0 instead of 7.0</li>
+            <li>Fixed sound engine settings not being saved in project properties</li>
+            <li>Fixed bass filter setting not being saved in app settings</li>
+            <li>Fixed VRC6 initialization in sound engine by writing zero to $9003</li>
+            <li>Fixed issue with vibrato in sound engine that could stall the audio</li>
+            <li>Fixed the "+" button of DPCM samples in project explorer on mobile</li>
+            <li>Fixed crash when pasting items between projects when using folders</li>
+            <li>Fixed GLFW compatibility issues on Linux (Thanks Steo!)</li>
+            <li>Fixed incorrect size of FDS disks</li>
+            <li>Fixed issue with non-looping relative pitch envelope in Sound Engine/NSF/ROM</li>
+            <li>Fixed issue with volume slides and FamiTracker tempo in Sound Engine/NSF/ROM</li>
+            <li>Made the video looping more consistent with how the audio loops in the app</li>
+            <li>Made it clearer that you cannot rename multiple patterns</li>
+            <li>Optimized VGM import</li>
+          </ul>
+        </description>
+      </release>     
       <release version="4.2.0" date="2024-04-20">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.2.0</url>
         <description>
