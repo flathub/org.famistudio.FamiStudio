@@ -30,8 +30,8 @@ modules:
       - cp -r * /app/bin/
     sources:
       - type: archive
-        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.2.1/FamiStudio421-LinuxAMD64.zip
-        sha256: 17e8fca5460be1fb83b23d2f1855756fe7f9748fa3373ce74b299ff17944a1b0
+        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.3.0/FamiStudio430-LinuxAMD64.zip
+        sha256: 20dafedf50015fc44a3976d722399cf49565c6baf749e5d6412eee81cbb7d114
         strip-components: 0
         x-checker-data:
           is-main-source: true
