@@ -3,7 +3,7 @@ runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.dotnet7
+  - org.freedesktop.Sdk.Extension.dotnet8
 add-extensions:
   org.freedesktop.Platform.ffmpeg-full:
     version: '23.08'
@@ -13,10 +13,10 @@ add-extensions:
 cleanup-commands:
   - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg
 build-options:
-  append-path: /usr/lib/sdk/dotnet7/bin
-  append-ld-library-path: /usr/lib/sdk/dotnet7/lib
+  append-path: /usr/lib/sdk/dotnet8/bin
+  append-ld-library-path: /usr/lib/sdk/dotnet8/lib
   env:
-    PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet7/lib/pkgconfig
+    PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet8/lib/pkgconfig
 
 cleanup-commands:
   - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg
@@ -38,8 +38,8 @@ modules:
       - cp -r * /app/bin/
     sources:
       - type: archive
-        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.2.1/FamiStudio421-LinuxAMD64.zip
-        sha256: 17e8fca5460be1fb83b23d2f1855756fe7f9748fa3373ce74b299ff17944a1b0
+        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.3.0/FamiStudio430-LinuxAMD64.zip
+        sha256: 20dafedf50015fc44a3976d722399cf49565c6baf749e5d6412eee81cbb7d114
         strip-components: 0
         x-checker-data:
           is-main-source: true
