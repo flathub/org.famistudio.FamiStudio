@@ -1,9 +1,17 @@
 app-id: org.famistudio.FamiStudio
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.dotnet7
+add-extensions:
+  org.freedesktop.Platform.ffmpeg-full:
+    version: '23.08'
+    directory: lib/ffmpeg
+    add-ld-path: .
+    autodelete: false
+cleanup-commands:
+  - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg
 build-options:
   append-path: /usr/lib/sdk/dotnet7/bin
   append-ld-library-path: /usr/lib/sdk/dotnet7/lib
