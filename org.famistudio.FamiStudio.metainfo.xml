@@ -23,6 +23,28 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.3.1" date="2025-01-11">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.3.1</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>Fixed MMC5 volume being too quiet (Thanks Steo!)</li>
+            <li>Fixed crash when pasting patterns between projects with different expansions (Thanks Steo!)</li>
+            <li>Fixed MIDI channel 10 drum key map</li>
+            <li>Fixed undo/redo not working properly on instrument parameter sliders</li>
+            <li>Fixed crash when exporting video after cancelling a preview on mobile</li>
+            <li>Fixed PAL toggling for ROM files (Thanks Steo!)</li>
+            <li>Fixed DPCM preview button playing the audio more times than intended (Thanks Steo!)</li>
+            <li>Fixed multiple typos and localization issues (Thanks Alex and Nyaongi!)</li>
+            <li>Fixed multiple issues when using non-native OS dialogs</li>
+            <li>Fixed crash when entering multiple '-' in numeric up-down</li>
+            <li>Fixed checkboxes resettings on mobile when the screen was resized</li>
+            <li>Reverted non-functional flatpak video changes</li>
+            <li>Added missing note tables in the sound engine zip distribution</li>
+            <li>Added Linux executable</li>
+          </ul>
+        </description>
+      </release>      
       <release version="4.3.0" date="2024-12-19">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.3.0</url>
         <description>
