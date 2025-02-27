@@ -23,6 +23,30 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.3.3" date="2025-02-28">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.3.3</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>First IOS release!</li>
+            <li>Improved playback speed precision to better match hardware</li>
+            <li>Improved NSF import duration accuracy</li>
+            <li>Fixed toolbar issue when resizing that could cause the timecode to be misplaced</li>
+            <li>Fixed DPCM bit reversing on NSF and VGM import</li>
+            <li>Fixed temp folder issue which caused freezing on Linux</li>
+            <li>Fixed several typos and localization issues</li>
+            <li>Fixed DPCM reload button always being visually enabled</li>
+            <li>Fixed crash when trying to use undo/redo during certain operations</li>
+            <li>Fixed app not asking you to save new project if app was first minimized on mobile</li>
+            <li>Fixed issues on Linux using Wayland when using high DPI scalings</li>
+            <li>Fixed instrument/arpeggio eyedropper</li>
+            <li>Fixed metronome volume not applying until you restarted the app</li>
+            <li>Added tooltip for "Select All / Select None" </li>
+            <li>Reversed bits of Journey to Silius demo song to sound as the authors intended</li>
+            <li>Most of these fixes/improvements were done in collaboration with Steo, thanks!</li>
+          </ul>
+        </description>
+      </release>          
       <release version="4.3.2" date="2025-01-11">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.3.2</url>
         <description>
