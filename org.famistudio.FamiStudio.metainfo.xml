@@ -23,6 +23,24 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.4.1" date="2025-06-15">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.4.1</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>Fixed crash when using blank FDS instrument</li>
+            <li>Fixed N163 &lt;-&gt; FDS instrument conversion</li>
+            <li>Fixed an FDS issue that affected certain older imports (Gyruss had sine waves on some instruments)</li>
+            <li>Fixes and improved FDS modulation (sound engine and FS emulation)</li>
+            <li>Fixed toolbar issue on mobile involving context menus being unresponsive</li>
+            <li>Fixed issue with merging identical patterns where an incorrect arpeggio would be used</li>
+            <li>Fixed issue with very low "Resample Period" on FDS or N163 using blank waveforms</li>
+            <li>Multiple Linux and GTK dialog issues</li>
+            <li>Multiple small widgets implements/fixes</li>
+            <li>Localization updates</li>
+          </ul>          
+        </description>
+      </release>      
       <release version="4.4.0" date="2025-06-01">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.4.0</url>
         <description>
