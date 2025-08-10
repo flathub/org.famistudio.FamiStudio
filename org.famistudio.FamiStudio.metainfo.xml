@@ -23,6 +23,22 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.4.2" date="2025-08-10">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.4.2</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>Fixed deadlock on IOS when pressing Play/Rewind rapidly</li>
+            <li>Fixed importing of NSF using the triangle length counter</li>
+            <li>Fixed DPCM samples getting mixed up when exporting to NSF/ROM</li>
+            <li>Fixed grey square when inputting texture on some Android version (Thanks Steo!)</li>
+            <li>Multiple DPI fixes, including manual scaling on macOS (Thanks Steo!)</li>
+            <li>Multiple VGM import fixes (Thanks Perkka!)</li>
+            <li>Added new DPCM options when exporting to sound engine (Thanks Alex for the feedback/testing!)</li>
+            <li>Upgraded to latest Android SDK</li>
+          </ul>          
+        </description>
+      </release>          
       <release version="4.4.1" date="2025-06-15">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.4.1</url>
         <description>
