@@ -30,8 +30,8 @@ modules:
       - cp -r * /app/bin/
     sources:
       - type: archive
-        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.4.3/FamiStudio443-LinuxAMD64.zip
-        sha256: 922291cd70a2180c4387d94a3b1b6b908965f8ec1b29353d2ab47f5631151aca
+        url: https://github.com/BleuBleu/FamiStudio/releases/download/4.4.4/FamiStudio444-LinuxAMD64.zip
+        sha256: 2129eef99c44875c8ca34968132eeecabc7463ac5c9fccee693bf63cc1f78b0c
         strip-components: 0
         x-checker-data:
           is-main-source: true
