@@ -4,13 +4,14 @@
   <launchable type="desktop-id">org.famistudio.FamiStudio.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
-  <developer_name>BleuBleu</developer_name>
+	<developer id="org.famistudio">
+		<name>BleuBleu</name>
+	</developer>
   <name>FamiStudio</name>
   <summary>FamiStudio NES Music Editor</summary>
   <description>
-    <p>
-      FamiStudio NES Music Editor
-    </p>
+    <p>Music editor for the Nintendo Entertainment System or Famicom.
+      It is targeted at both chiptune artists and NES homebrewers.</p>
   </description>
   <screenshots>
     <screenshot type="default">
@@ -20,6 +21,7 @@
   </screenshots>
   <url type="homepage">https://famistudio.org/</url>
   <url type="bugtracker">https://github.com/BleuBleu/FamiStudio/issues</url>
+  <url type="vcs-browser">https://github.com/BleuBleu/FamiStudio</url>
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
@@ -34,9 +36,9 @@
             <li>Fixed an issue with delayed cuts when exporting to NSF/Sound Engine.</li>
             <li>Fixed crash when entering filenames containing slashes on Linux (Thanks Steo!)</li>
             <li>Attempting to bring back armv7 (32-bit) support on Android, untested, may crash.</li>
-          </ul>          
+          </ul>
         </description>
-      </release>        
+      </release>
       <release version="4.4.3" date="2025-10-29">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.4.3</url>
         <description>
@@ -56,9 +58,9 @@
             <li>Reverted some recent MIDI changes that could delay notes by 1 frames in certain situations</li>
             <li>Added option to update the source for a DPCM sample</li>
             <li>Android native libraries are aligned to 16KB pages to make Google happy</li>
-          </ul>          
+          </ul>
         </description>
-      </release>              
+      </release>
       <release version="4.4.2" date="2025-08-10">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.4.2</url>
         <description>
@@ -72,9 +74,9 @@
             <li>Multiple VGM import fixes (Thanks Perkka!)</li>
             <li>Added new DPCM options when exporting to sound engine (Thanks Alex for the feedback/testing!)</li>
             <li>Upgraded to latest Android SDK</li>
-          </ul>          
+          </ul>
         </description>
-      </release>          
+      </release>
       <release version="4.4.1" date="2025-06-15">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.4.1</url>
         <description>
@@ -90,9 +92,9 @@
             <li>Multiple Linux and GTK dialog issues</li>
             <li>Multiple small widgets implements/fixes</li>
             <li>Localization updates</li>
-          </ul>          
+          </ul>
         </description>
-      </release>      
+      </release>
       <release version="4.4.0" date="2025-06-01">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.4.0</url>
         <description>
@@ -106,9 +108,9 @@
             <li>NSF/VGM import tuning option (thanks Steo!)</li>
             <li>Linux support for kdialog and zenity for dialogs (thanks Steo!)</li>
             <li>Reworked C-binding and ability to combine identical channels in sound engine (thanks jroweboy!)</li>
-          </ul>          
+          </ul>
         </description>
-      </release>  
+      </release>
       <release version="4.3.3" date="2025-02-28">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.3.3</url>
         <description>
@@ -132,7 +134,7 @@
             <li>Most of these fixes/improvements were done in collaboration with Steo, thanks!</li>
           </ul>
         </description>
-      </release>          
+      </release>
       <release version="4.3.2" date="2025-01-11">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.3.2</url>
         <description>
@@ -141,7 +143,7 @@
             <li>Fixed crash when exporting audio/video</li>
           </ul>
         </description>
-      </release>          
+      </release>
       <release version="4.3.1" date="2025-01-11">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.3.1</url>
         <description>
@@ -163,7 +165,7 @@
             <li>Added Linux executable</li>
           </ul>
         </description>
-      </release>      
+      </release>
       <release version="4.3.0" date="2024-12-19">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.3.0</url>
         <description>
@@ -189,7 +191,7 @@
             <li>Most "Select All" / "Select None" buttons have been replace by context menus (right-click on desktop, long press on mobile).</li>
           </ul>
         </description>
-      </release>       
+      </release>
       <release version="4.2.1" date="2024-05-26">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.2.1</url>
         <description>
@@ -211,7 +213,7 @@
             <li>Optimized VGM import</li>
           </ul>
         </description>
-      </release>     
+      </release>
       <release version="4.2.0" date="2024-04-20">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.2.0</url>
         <description>
@@ -246,7 +248,7 @@
             <li>Minimum OpenGL requirement for Desktop lowered to OpenGL 3.0 (was 3.3)</li>
           </ul>
         </description>
-      </release>          
+      </release>
       <release version="4.1.3" date="2023-09-04">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.1.3</url>
         <description>
@@ -268,7 +270,7 @@
             <li>Upgraded to Android API level 33 (Android 13.0)</li>
           </ul>
         </description>
-      </release>          
+      </release>
       <release version="4.1.2" date="2023-08-15">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.1.2</url>
         <description>
@@ -287,7 +289,7 @@
             <li>An APK of the Android version is now available for download, but no support will be provided if it does not work on your device</li>
           </ul>
         </description>
-      </release>      
+      </release>
       <release version="4.1.1" date="2023-07-22"/>
       <release version="4.1.0" date="2023-07-09">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.1.0</url>
@@ -316,9 +318,9 @@
             <li>All desktop version now requires OpenGL 3.3</li>
             <li>Android version now requires OpenGL ES 2.0</li>
             <li>Windows 7 and 32-bit systems are longer supported</li>
-          </ul>          
+          </ul>
         </description>
-      </release>          
+      </release>
 
       <release version="4.0.6" date="2022-12-20">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.6</url>
@@ -326,7 +328,7 @@
           <p>Fixes in 4.0.6:</p>
           <ul>
             <li>Please see change log on famistudio.org.</li>
-          </ul>          
+          </ul>
           <p>Changes in 4.0.0 (last major release):</p>
           <ul>
             <li>Revamped desktop version</li>
@@ -341,14 +343,14 @@
             <li>Snapping improvements, most notably:</li>
           </ul>
         </description>
-      </release>          
+      </release>
       <release version="4.0.5" date="2022-12-17">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.5</url>
         <description>
           <p>Fixes in 4.0.5:</p>
           <ul>
             <li>Please see change log on famistudio.org.</li>
-          </ul>          
+          </ul>
           <p>Changes in 4.0.0 (last major release):</p>
           <ul>
             <li>Revamped desktop version</li>
@@ -363,14 +365,14 @@
             <li>Snapping improvements, most notably:</li>
           </ul>
         </description>
-      </release>             
+      </release>
       <release version="4.0.4" date="2022-09-25">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.2</url>
         <description>
           <p>Fixes in 4.0.4:</p>
           <ul>
             <li>Fixed video export when there are more than 32 channels in a project.</li>
-          </ul>          
+          </ul>
           <p>Fixes in 4.0.3:</p>
           <ul>
             <li>Fixed drop-down lists requiring double-clicks.</li>
@@ -407,7 +409,7 @@
             <li>Snapping improvements, most notably:</li>
           </ul>
         </description>
-      </release>          
+      </release>
       <release version="4.0.3" date="2022-09-25">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.2</url>
         <description>
@@ -447,7 +449,7 @@
             <li>Snapping improvements, most notably:</li>
           </ul>
         </description>
-      </release>           
+      </release>
       <release version="4.0.2" date="2022-09-25">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.2</url>
         <description>
@@ -483,7 +485,7 @@
             <li>Snapping improvements, most notably:</li>
           </ul>
         </description>
-      </release>       
+      </release>
       <release version="4.0.1" date="2022-08-25">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.1</url>
         <description>
@@ -505,7 +507,7 @@
             <li>Snapping improvements, most notably:</li>
           </ul>
         </description>
-      </release>         
+      </release>
       <release version="4.0.0" date="2022-08-24">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.0.0</url>
         <description>
@@ -523,7 +525,7 @@
             <li>Snapping improvements, most notably:</li>
           </ul>
         </description>
-      </release>         
+      </release>
       <release version="3.3.1" date="2022-06-11">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.3.1</url>
         <description>
@@ -532,7 +534,7 @@
             <li>Fixed crash when exporting (or cancelling export) to audio or video</li>
             <li>Fixed crash when undo-ing certain manipulations in the Sequencer</li>
             <li>Allowing register viewer on Mobile (off by default)</li>
-          </ul>            
+          </ul>
           <p>Changes in 3.3.0:</p>
           <ul>
             <li>EPSM support (Thanks Perkka!)</li>
@@ -549,7 +551,7 @@
             <li>Tons of small bugfixes (N163 tuning, crashes, etc.)</li>
           </ul>
         </description>
-      </release>        
+      </release>
       <release version="3.3.0" date="2022-05-08">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.3.0</url>
         <description>
@@ -569,7 +571,7 @@
             <li>Tons of small bugfixes (N163 tuning, crashes, etc.)</li>
           </ul>
         </description>
-      </release>         
+      </release>
       <release version="3.2.3" date="2021-02-06">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.2.3</url>
         <description>
@@ -582,12 +584,12 @@
             <li>Clamping pitch values to the range supported by FamiStudio (-64...63) when importing Famitracker files </li>
             <li>Added a new tutorial about snapping</li>
             <li>Saving snap settings to INI file</li>
-          </ul>          
+          </ul>
           <ul>
             <li>Fixed issue where some effect values could go beyond their intended range, and lead to crashes desktop.</li>
             <li>Fixed FDS modulation on Mobile.</li>
             <li>Fixed crash in MIDI import dialog when lots of channels are present (desktop only)</li>
-            <li>Potential CPU/GPU usage reduction on some computers (desktop only)</li>     
+            <li>Potential CPU/GPU usage reduction on some computers (desktop only)</li>
           </ul>
           <p>Fixes in 3.2.1</p>
           <ul>
@@ -614,7 +616,7 @@
             <li>Minor cosmetic UI changes (icons, envelope editor, coloring piano with DPCM colors, etc.)</li>
           </ul>
         </description>
-      </release>         
+      </release>
       <release version="3.2.2" date="2021-12-06">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.2.2</url>
         <description>
@@ -623,7 +625,7 @@
             <li>Fixed issue where some effect values could go beyond their intended range, and lead to crashes desktop.</li>
             <li>Fixed FDS modulation on Mobile.</li>
             <li>Fixed crash in MIDI import dialog when lots of channels are present (desktop only)</li>
-            <li>Potential CPU/GPU usage reduction on some computers (desktop only)</li>     
+            <li>Potential CPU/GPU usage reduction on some computers (desktop only)</li>
           </ul>
           <p>Fixes in 3.2.1</p>
           <ul>
@@ -650,7 +652,7 @@
             <li>Minor cosmetic UI changes (icons, envelope editor, coloring piano with DPCM colors, etc.)</li>
           </ul>
         </description>
-      </release>          
+      </release>
       <release version="3.2.1" date="2021-11-24">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.2.1</url>
         <description>
@@ -679,7 +681,7 @@
             <li>Minor cosmetic UI changes (icons, envelope editor, coloring piano with DPCM colors, etc.)</li>
           </ul>
         </description>
-      </release>       
+      </release>
       <release version="3.2.0" date="2021-11-10">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.2.0</url>
         <description>
@@ -693,7 +695,7 @@
             <li>Minor cosmetic UI changes (icons, envelope editor, coloring piano with DPCM colors, etc.)</li>
           </ul>
         </description>
-      </release>            
+      </release>
       <release version="3.1.1" date="2021-08-16">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.1.1</url>
         <description>
@@ -705,7 +707,7 @@
             <li>Adding failsafe when time signature cannot be computed when exporting MIDI</li>
             <li>Associating FMS files with FamiStudio on startup in portable mode</li>
             <li>Experimental support for OpenH264 in video export</li>
-          </ul>          
+          </ul>
           <p>Changes in 3.1.0 (Last major release):</p>
           <ol>
             <li>OGG export</li>
@@ -727,7 +729,7 @@
             <li>Sound Engine CC65 bindings (Contribution from jroweboy!)</li>
           </ol>
         </description>
-      </release>        
+      </release>
       <release version="3.1.0" date="2021-08-05">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.1.0</url>
         <description>
@@ -752,7 +754,7 @@
             <li>Sound Engine CC65 bindings (Contribution from jroweboy!)</li>
           </ol>
         </description>
-      </release>        
+      </release>
       <release version="3.0.2" date="2021-06-28">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.2</url>
         <description>
@@ -789,7 +791,7 @@
             <li>Improved video rendering speed</li>
           </ul>
         </description>
-      </release>       
+      </release>
       <release version="3.0.1" date="2021-06-17">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.1</url>
         <description>
@@ -806,7 +808,7 @@
             <li>Fixed export of VRC6 duty cycles to FamiTracker</li>
             <li>Properly shutting down MIDI input on Windows</li>
             <li>Adding error message when trying to import NSF using multiple expansion chips</li>
-          </ul>          
+          </ul>
           <p>Changes/Fixes in 3.0.0:</p>
           <ol>
             <li>Redesigned FamiStudio tempo</li>
@@ -826,7 +828,7 @@
             <li>Improved video rendering speed</li>
           </ol>
         </description>
-      </release>     
+      </release>
       <release version="3.0.0" date="2021-06-01">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/3.0.0</url>
         <description>
@@ -849,7 +851,7 @@
             <li>Improved video rendering speed</li>
           </ol>
         </description>
-    </release>   
+    </release>
     <release version="2.4.2" date="2021-05-03">
       <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.4.2</url>
       <description>
@@ -857,14 +859,14 @@
         <ol>
             <li>Fixed crash on startup.</li>
             <li>Fixed crash when exporting SFX to sound engine from command-line.</li>
-        </ol>          
+        </ol>
         <p>Fixes in 2.4.1 (Hotfix)</p>
         <ol>
             <li>Fixed corruption when importing looping samples from .FTI files.</li>
             <li>Fixed minor graphical issue in piano roll.</li>
             <li>Fixed issues on Windows 7 installations that are missing some D3D11 components such as KB2670838.</li>
             <li>Removed 320 kbps MP3 export option since it creates choppy audio.</li>
-        </ol>        
+        </ol>
         <p>Changes/Fixes in 2.4.0:</p>
         <ol>
           <li>Basic DPCM sample editor</li>
@@ -885,7 +887,7 @@
           <li>Multiple sound engine improvements and fixes</li>
         </ol>
       </description>
-    </release>     
+    </release>
     <release version="2.4.0" date="2021-03-08">
       <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.4.0</url>
       <description>
@@ -909,7 +911,7 @@
           <li>Multiple sound engine improvements and fixes</li>
         </ol>
       </description>
-    </release>    
+    </release>
     <release version="2.3.2" date="2021-01-18">
       <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.2</url>
       <description>
@@ -924,7 +926,7 @@
           <li>Fixed import of older FamiStudio text files (pre 2.3.0).</li>
           <li>Fixed NSF/sound engine crash when exporting empty arpeggios.</li>
           <li>Fixed issue with arpeggios sometimes persisting when a song loops.</li>
-        </ol>        
+        </ol>
         <p>Fixes in 2.3.1:</p>
         <ol>
           <li>Fixing a GL issue on some distros or hardware configurations leading to an obscure X error.</li>
@@ -947,7 +949,7 @@
           <li>Sound engine code size reduction</li>
         </ol>
       </description>
-    </release>   
+    </release>
     <release version="2.3.1" date="2021-01-03">
       <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.0</url>
       <description>
@@ -973,7 +975,7 @@
           <li>Sound engine code size reduction</li>
         </ol>
       </description>
-    </release>    
+    </release>
     <release version="2.3.0" date="2021-01-03">
       <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.3.0</url>
       <description>
@@ -994,7 +996,7 @@
           <li>Sound engine code size reduction</li>
         </ol>
       </description>
-    </release>  
+    </release>
     <release version="2.2.1" date="2020-10-03">
       <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.2.1</url>
       <description>
@@ -1006,7 +1008,7 @@
           <li>Fixed glibc dependency issue on Linux that go introduced in 2.2.0.</li>
         </ol>
       </description>
-    </release>  
+    </release>
     <release version="2.2.0" date="2020-09-07">
       <url>https://github.com/BleuBleu/FamiStudio/releases/tag/2.2.0</url>
       <description>
