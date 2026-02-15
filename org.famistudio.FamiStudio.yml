@@ -1,6 +1,6 @@
 app-id: org.famistudio.FamiStudio
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.dotnet8
@@ -9,9 +9,6 @@ build-options:
   append-ld-library-path: /usr/lib/sdk/dotnet8/lib
   env:
     PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet8/lib/pkgconfig
-
-cleanup-commands:
-  - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg
 command: famistudio.sh
 finish-args:
   - --share=ipc
