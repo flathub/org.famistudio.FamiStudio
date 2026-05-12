@@ -25,6 +25,23 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.5.1" date="2026-05-10">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.5.1</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>Fixed several VGM issues (incorporated some from Perkka too)</li>
+            <li>Current song is now selected by default in export dialog</li>
+            <li>Added VRC7 sustain bit (override release) in NSF</li>
+            <li>Added sub-menus for context menus and moved scale options to them</li>
+            <li>Added option for dim unsupported channels</li>
+            <li>Added option to make selected patterns unique (icons should follow in a major release)</li>
+            <li>Fixed issue with N163 loop / release points on import (bug introduced in 4.5.0)</li>
+            <li>Fixed FamiTracker N163 export issues (chunk length and truncate to 32)</li>
+            <li>Fixed some export dialog localisation errors</li>
+          </ul>
+        </description>
+      </release>    
       <release version="4.5.0" date="2026-04-05">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.5.0</url>
         <description>
