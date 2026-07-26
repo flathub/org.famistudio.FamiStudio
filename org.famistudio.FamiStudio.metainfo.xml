@@ -25,6 +25,23 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.5.2" date="2026-07-26">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.5.2</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>Fixed export dialog issue where "Loop Count" and "Duration" options could both be disabled)</li>
+            <li>Fixed issue where a leading whitespace in the project name would break ROM / NSF exporti></li>
+            <li>Fixed issue with FamiTracker exports where envelopes weren't truncated to max supported length</li>
+            <li>Fixed issue where sequencer didn't update when deleting a sample in "DPCM Sample" color modeo them</li>
+            <li>Fixed issue introduced in 4.5.0 regarding MIDI instruments no longer exporting as intended</li>
+            <li>Added option to replace arps in context menu follow in a major release)</li>
+            <li>Fixed crash with broken MIDI files (unexpected end of file)introduced in 4.5.0)</li>
+            <li>Fixed issue where pasting a pattern in the sequencer could lead to it containing an unsupported effectcate to 32)</li>
+            <li>Fixed issue with switching back to instrument arp after using an override</li>
+          </ul>
+        </description>
+      </release>        
       <release version="4.5.1" date="2026-05-10">
         <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.5.1</url>
         <description>
