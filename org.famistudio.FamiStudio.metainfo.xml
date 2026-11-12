@@ -25,8 +25,33 @@
   <url type="help">https://famistudio.org/doc/index.html</url>
   <content_rating type="oars-1.1"/>
   <releases>
+      <release version="4.5.4" date="2026-11-12">
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.5.4</url>
+        <description>
+          <p>Changes/Fixes:</p>
+          <ul>
+            <li>Fixed incorrect GD3 info being imported to project upon importing a VGM file</li>
+            <li>Fixed mobile issue where tapping two different sequencer icons could register as a double-tap</li>
+            <li>Fixed video export issue where a DPCM note touching the end of the song retriggered on loop</li>
+            <li>Fixed NSF / VGM import issue that resulted in many fine-pitches incorrectly being -1</li>
+            <li>Fixed NSF / VGM import issue that caused fine-pitch to always reset to 0 on release</li>
+            <li>Fixed minor oscilloscope issues on mobile</li>
+            <li>Fixed crash regarding pasting notes without creating missing samples then using cut / copy</li>
+            <li>Fixed text import issue that caused tempos of 75 or lower to incorrectly give a tempo error</li>
+            <li>Fixed NSF / VGM import issue regarding MMC5 instruments not being compatible with 2A03</li>
+            <li>Fixed parsing of MIDI files containing system exclusive messages</li>
+            <li>Fixed crash on mobile when cancelling export then exporting again shortly afterwards</li>
+            <li>Fixed issue when importing N163 instruments into a project with a higher N163 channel count</li>
+            <li>Fixed issue where toggling "fully emulate when seeking" in settings wouldn't recreate players</li>
+            <li>Fixed cursor hotspot on Hi-DPI linux (Thanks eliasdaler!)</li>
+            <li>Fixed VRC7 ROM issues on real hardware (Thanks aeromodes!)</li>
+            <li>Added warning on note/period overflows when exporting (Thanks aeromodes!)</li>
+            <li>Minor localization changes (thanks to all the localizers!)</li>
+          </ul>
+        </description>
+      </release>        
       <release version="4.5.3" date="2026-08-10">
-        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.5.2</url>
+        <url>https://github.com/BleuBleu/FamiStudio/releases/tag/4.5.3</url>
         <description>
           <p>Changes/Fixes:</p>
           <ul>
